@@ -1,6 +1,6 @@
-import './index.css'
+import './index.css';
 
-const Button = ({ text, type = 'primary', customColor, customBgColor }) => {
+const Button = ({ text, type = 'primary', customColor, customBgColor, href }) => {
     let buttonClass;
     const additionalStyles = {};
 
@@ -19,18 +19,22 @@ const Button = ({ text, type = 'primary', customColor, customBgColor }) => {
     }
 
     if (customColor) {
-        additionalStyles.color = color;
+        additionalStyles.color = customColor;
     }
 
     if (customBgColor) {
-        additionalStyles.backgroundColor = bgColor;
+        additionalStyles.backgroundColor = customBgColor;
     }
 
-    return (
-        <button className={buttonClass} style={additionalStyles}>
-            {text}
-        </button>
-    );
+    const Tag = href ? 'a' : 'button';
+
+    const commonProps = {
+        className: buttonClass,
+        style: additionalStyles,
+        ...(href ? { href } : {})
+    };
+
+    return <Tag {...commonProps}>{text}</Tag>;
 };
 
 export default Button;
