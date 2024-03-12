@@ -1,6 +1,6 @@
 .cta {
-  background-color: #ED4C5C;
-  padding: 9rem 0;
+  background-color: var(--color-redish);
+  padding: var(--section-padding);
   
   & .wrapper {
     display: flex;
