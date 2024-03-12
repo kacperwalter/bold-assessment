@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './index.css';
 import Heading from '../../components/heading';
 import Text from '../../components/text';
 import Wrapper from '../../components/wrapper';
 import FormInput from '../../components/formInput';
 import contactModel from '../../models/contact.model';
+import Button from '../../components/button';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +45,7 @@ const Contact = () => {
 
           <FormInput type="tel" name="phoneNumber" placeholder={contactModel.phoneNumberPlaceholder} required style="full" value={formData.phoneNumber} onChange={handleChange} />
           <FormInput type="textarea" name="message" placeholder={contactModel.messagePlaceholder} required style="full" value={formData.message} onChange={handleChange} />
-          <button type="submit">{contactModel.submitButtonLabel}</button>
+          <Button text={contactModel.submitButtonLabel} type="primary" />
         </form>
       </Wrapper>
     </section>

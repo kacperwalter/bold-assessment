@@ -5,7 +5,7 @@ const contactModel = {
     lastNamePlaceholder: 'Last Name',
     phoneNumberPlaceholder: 'Phone Number',
     messagePlaceholder: 'What service are you interested in?',
-    submitButtonLabel: 'Send',
+    submitButtonLabel: 'Submit now',
   };
   
   export default contactModel;
