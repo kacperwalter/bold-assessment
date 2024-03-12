@@ -14,8 +14,7 @@ const Contact = () => {
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nulla convallis libero nec nisl gravida, eget euismod quam 
-            aliquet. Nullam nec erat auctor, condimentum elit eget, 
-            fermentum nunc. 
+            aliquet.
           </Text>
         </div>
         <div className="form">
