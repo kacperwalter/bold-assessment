@@ -29,8 +29,6 @@
 
     .button {
       max-width: 16rem;
-      cursor: pointer;
-      border: none;
     }
   }
 }
