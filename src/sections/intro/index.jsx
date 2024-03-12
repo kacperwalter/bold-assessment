@@ -2,6 +2,7 @@ import './index.css';
 import Heading from '../../components/heading';
 import Text from '../../components/text';
 // import Rating from '../../components/rating';
+import Button from '../../components/button';
 
 const Intro = () => {
   return (
@@ -14,7 +15,7 @@ const Intro = () => {
           Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of <br/>Up to €4.99
         </Text>
         {/* <Rating /> */}
-        <a href="#" className="btn">SIGN UP</a>
+        <Button text="Sign up" type="secondary" href="#" />
       </div>
     </div>
   )
