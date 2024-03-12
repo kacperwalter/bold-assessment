@@ -1,12 +1,13 @@
 import './index.css';
 import Heading from '../../components/heading';
 import Text from '../../components/text';
+import Wrapper from '../../components/wrapper';
 
 const Contact = () => {
 
   return (
     <section className="contact">
-      <div className="container">
+      <Wrapper>
         <div className="content">
           <Heading level={2}>
             Contact
@@ -20,7 +21,7 @@ const Contact = () => {
         <div className="form">
           some form
         </div>
-      </div>
+      </Wrapper>
     </section>
   )
 };

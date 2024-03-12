@@ -2,9 +2,7 @@
   background-color: #ED4C5C;
   padding: 9rem 0;
   
-  & .container {
-    max-width: 111rem;
-    margin: 0 auto;
+  & .wrapper {
     display: flex;
     justify-content: space-between;
   }
