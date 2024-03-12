@@ -1,7 +1,7 @@
-function Text({ className, color, size, style, children }) {
+function Text({ className, color = 'black', size = '16px', style, children }) {
   const textStyle = {
-    color: color || 'black',
-    fontSize: size || '16px',
+    color: color,
+    fontSize: size,
     ...style,
   };
 

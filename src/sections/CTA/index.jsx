@@ -1,6 +1,7 @@
 import './index.css';
 import Heading from '../../components/heading';
 import Text from '../../components/text';
+import Wrapper from '../../components/wrapper';
 import focusImg from '/focus.png';
 import iconsImg from '/icons.png';
 import ctaModel from '../../models/CTA.model';
@@ -8,7 +9,7 @@ import ctaModel from '../../models/CTA.model';
 const CTA = () => {
   return (
     <div className="cta">
-      <div className="container">
+      <Wrapper>
         <div className="content">
           <Heading level={2} color="white">
             {ctaModel.heading}
@@ -21,8 +22,7 @@ const CTA = () => {
         <div className="image">
           <img src={focusImg} alt="Focus" />
         </div>
-      </div>
-      
+      </Wrapper>
     </div>
   )
 };

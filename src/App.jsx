@@ -1,5 +1,7 @@
 import React from 'react'
 import './App.css'
+import './styles/colors.css'
+import './styles/spacings.css'
 import TopBar from './components/topBar'
 import Intro from './sections/intro'
 import Features from './sections/features'

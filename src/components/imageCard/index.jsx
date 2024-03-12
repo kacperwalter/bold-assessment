@@ -1,6 +1,7 @@
 import Image from '../image'
 import Heading from '../heading';
 import Text from '../text';
+import Button from '../../components/button';
 import './index.css'
 
 
@@ -11,7 +12,7 @@ const ImageCard = ({image, heading, text, link}) => {
       <div className='imageCard__content'>
         <Heading level={3}>{heading}</Heading>
         <Text className="imageCard__text"> {text} </Text>
-        <a href={link} className='imageCard__link'>Read More</a>
+        <Button text="Read more" type="ghost" href={link} />
       </div>
     </div>
   )
