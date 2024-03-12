@@ -1,0 +1,16 @@
+.button {
+    &.button-primary {
+        background-color: var(--color-redish);
+        color: var(--color-white)
+    }
+
+    &.button-secondary {
+        background-color: var(--color-white);
+        color: var(--color-redish);
+    }
+
+    &.button-ghost {
+        background-color: transparent;
+        color: var(--color-redish);
+    }
+}
