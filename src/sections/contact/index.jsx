@@ -17,7 +17,7 @@ const Contact = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    
+
     setFormData(prevFormData => ({
       ...prevFormData,
       [name]: value,
@@ -26,7 +26,7 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData);
+    console.log(formData); // For demonstration, log the form data to the console
   };
 
   return (
@@ -39,12 +39,43 @@ const Contact = () => {
 
         <form className="form" onSubmit={handleSubmit}>
           <span className="divider">
-            <FormInput type="text" name="firstName" placeholder={contactModel.firstNamePlaceholder} required value={formData.firstName} onChange={handleChange} />
-            <FormInput type="text" name="lastName" placeholder={contactModel.lastNamePlaceholder} required value={formData.lastName} onChange={handleChange} />
+            <FormInput 
+              type="text" 
+              name="firstName" 
+              placeholder={contactModel.firstNamePlaceholder} 
+              required 
+              value={formData.firstName} 
+              onChange={handleChange} 
+            />
+            <FormInput 
+              type="text" 
+              name="lastName" 
+              placeholder={contactModel.lastNamePlaceholder} 
+              required 
+              value={formData.lastName} 
+              onChange={handleChange} 
+            />
           </span>
 
-          <FormInput type="tel" name="phoneNumber" placeholder={contactModel.phoneNumberPlaceholder} required style="full" value={formData.phoneNumber} onChange={handleChange} />
-          <FormInput type="textarea" name="message" placeholder={contactModel.messagePlaceholder} required style="full" value={formData.message} onChange={handleChange} />
+          <FormInput 
+            type="tel" 
+            name="phoneNumber" 
+            placeholder={contactModel.phoneNumberPlaceholder} 
+            required 
+            style="full" 
+            value={formData.phoneNumber} 
+            onChange={handleChange} 
+          />
+          <FormInput 
+            type="textarea" 
+            name="message" 
+            placeholder={contactModel.messagePlaceholder} 
+            required 
+            style="full" 
+            value={formData.message} 
+            onChange={handleChange} 
+          />
+
           <Button text={contactModel.submitButtonLabel} type="primary" />
         </form>
       </Wrapper>
